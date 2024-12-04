@@ -1,0 +1,28 @@
+{
+	"name": "start-template-typescript",
+	"version": "1.0.0",
+	"main": "app.js",
+	"license": "MIT",
+	"scripts": {
+		"start:dev": "ts-node src/app.ts",
+		"start:register": "ts-node src/registerNewAccount.ts",
+		"dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
+		"build": "tsc",
+		"eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx src",
+		"prettier": "prettier --write ./"
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^4.3.0",
+		"@types/node": "^20.11.5",
+		"@typescript-eslint/eslint-plugin": "^6.19.0",
+		"@typescript-eslint/parser": "^6.19.0",
+		"eslint": "^8.56.0",
+		"nodemon": "^3.0.3",
+		"prettier": "^3.2.4",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.3.3"
+	},
+	"dependencies": {
+		"puppeteer": "^23.10.1"
+	}
+}
